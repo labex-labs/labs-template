@@ -1,0 +1,73 @@
+{
+  "type": "lab",
+  "title": "Hello World",
+  "description": "In this lab, you will learn how to...",
+  "difficulty": "Beginner",
+  "time": 15,
+  "fee_type": "pro",
+  "hidden": false,
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1 Title",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "The Target of the verify script",
+            "file": "verify1.sh",
+            "hint": "Custom error message.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Step 2 Title",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "The Target of the verify script",
+            "file": "verify2.sh",
+            "hint": "Custom error message.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Step 3 Title",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "The Target of the verify script",
+            "file": "verify3.sh",
+            "hint": "Custom error message.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "sample-asset",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  }
+}
